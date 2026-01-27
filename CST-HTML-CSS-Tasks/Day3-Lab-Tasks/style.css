@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    color: #333;
+}
+
+a {
+    color: #e60012;
+    text-decoration: none;
+}
+
+.box {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.top {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    height: 40px;
+}
+
+.logo {
+    background: #e60012;
+    color: white;
+    font-weight: bold;
+    padding: 20px 10px;
+    border: 2px solid white;
+    border-top-left-radius: 30px;
+}
+
+.search {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    margin-left: 170px;
+    display: table-cell;
+    width: 410px;
+}
+
+.search input {
+    border: none;
+    width: 250px;
+}
+
+.rightlinks {
+    display: table-cell;
+    text-align: right;
+    font-weight: bold;
+}
+
+.rightlinks span {
+    margin-left: 20px;
+}
+
+.nav {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav a {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.active {
+    color: #e60012;
+    border-bottom: 3px solid #e60012;
+    padding-bottom: 12px;
+}
+
+.promo {
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.main {
+    margin: 20px 0;
+}
+
+.leftcol {
+    width: 700px;
+    display: table-cell;
+}
+
+.rightcol {
+    width: 420px;
+    display: table-cell;
+    padding-left: 80px;
+    vertical-align: top;
+}
+
+.image {
+    width: 700px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.cost {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #e60012;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.descrow {
+    margin: 40px 0;
+}
+
+.descleft {
+    width: 570px;
+    display: table-cell;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.descright {
+    width: 450px;
+    display: table-cell;
+    padding-left: 80px;
+    vertical-align: top;
+}
+
+.descimage {
+    width: 450px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+}
+
+.table td {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.labelcol {
+    width: 30%;
+    font-weight: bold;
+    color: #888;
+}
+
+.banner {
+    background: #f0f0f0;
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 12px;
+}
+
+.bannerleft {
+    width: 660px;
+    display: table-cell;
+}
+
+.bannerright {
+    width: 360px;
+    display: table-cell;
+    padding-left: 80px;
+    vertical-align: top;
+}
+
+.bannerimage {
+    width: 360px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.badge {
+    background: #e60012;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.view {
+    margin: 60px 0;
+}
+
+.productrow {
+    margin-right: -30px;
+}
+
+.product {
+    width: 270px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding-bottom: 15px;
+    display: table-cell;
+    margin-right: 30px;
+}
+
+.productimg {
+    width: 270px;
+    height: 150px;
+    border-bottom: 1px solid #eee;
+    border-radius: 8px 8px 0 0;
+}
+
+.productcost {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.thumb {
+    width: 100px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.foottop {
+    background: #e60012;
+    padding: 20px 0;
+}
+
+.footlogo {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 2px 15px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.social {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.social span {
+    margin-left: 25px;
+}
+
+.footmain {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.footcol {
+    width: 200px;
+    font-size: 13px;
+    display: table-cell;
+    padding-left: 15px;
+}
+
+.footcol:first-child {
+    padding-left: 0;
+}
+
+.footcol h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footcol ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footcol li {
+    margin-bottom: 12px;
+}
+
+.footcol a {
+    color: #e60012;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cert {
+    padding: 20px 0;
+    text-align: right;
+}
+
+.certbox {
+    border: 1px solid #333;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.footbottom {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    font-size: 11px;
+}
+
+.footbottom .box {
+    position: relative;
+}
+
+.footleft {
+    display: table-cell;
+    width: 720px;
+}
+
+.footright {
+    display: table-cell;
+    text-align: right;
+    width: 480px;
+}
+
+.footright a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.toprow {
+    display: table;
+    width: 100%;
+}
