@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaf0f3;
+}
+
+h1 {
+    margin: 15px 30px;
+}
+
+.stdSelect {
+    background-color: white;
+    width: 25%;
+    height: 300px;
+    padding: 25px;
+    margin: 15px 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.stdSelect p {
+    font-size: 13px;
+}
+
+.stdSelect select {
+    cursor: pointer;
+}
+
+.stdDetails {
+    background-color: white;
+    width: 60%;
+    height: 300px;
+    padding: 25px;
+    margin: 15px 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.stdDetails label {
+    display: inline-block;
+}
+
+legend {
+    font-size: 13px;
+}
+
+.input {
+    width: 40%;
+    display: inline-block;
+    padding: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+#input1, #input2, #input3, #input4, #input5, #input6 {
+    margin: 5px;
+    background-color: #f8faf9;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#btnSave {
+    background-color: #137b54;
+}
+
+#btnDelete {
+    background-color: #e84543;
+}

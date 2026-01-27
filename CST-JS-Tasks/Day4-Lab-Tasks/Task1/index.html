@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <!-- 1- Create your first html file that contains any html tags. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4 CST - JS</title>
+    <!-- 2- create External Script name it External.js -->
+    <script src="External.js"></script>
+    <!-- 2- Internal script inside <head>  -->
+    <script>
+        var num1 = 10;
+        var num2 = "22";
+        var num3 = null;
+        // 4- print in console result of simmition Num 1, Num2 with 6 digits
+        var result1 = (num1 + Number(num2)).toFixed(6);   
+        // 5- print summation of num1 , num3
+        var result2 = num1 + num3;
+        // 6- declare variable x with out initialization
+        var x;
+        // 7- multiply num 1  with x ;
+        var result3 = num1 * x;
+    </script>
+    <!-- 8- print all results in external script and load it after internal script -->
+    <script src="Result.js"></script>
+</head>
+<body>
+    
+</body>
+</html>

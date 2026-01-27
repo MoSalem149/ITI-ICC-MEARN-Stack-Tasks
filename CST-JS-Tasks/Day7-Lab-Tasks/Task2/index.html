@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main -->
+    <div class="container">
+            <h1>Students Affairs Dashboard</h1>
+            <!-- Select -->
+            <div id="stdSelect" class="stdSelect">
+                <p>Select Student</p>
+                <select id="stdSelect"></select>
+            </div>
+            <!-- Details -->
+            <div id="stdDetiles" class="stdDetails">
+                <h4>Student Details</h4>
+                <div id="input1" class="input">
+                    <legend for="fname">First Name</legend>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div id="input2" class="input">
+                    <legend for="lname">Last Name</legend>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div id="input3" class="input">
+                    <legend for="crs">Course</legend>
+                    <input type="text" id="crs" name="crs">
+                </div>
+                <div id="input4" class="input">
+                    <legend for="grade">Grade</legend>
+                    <input type="text" id="grade" name="grade">
+                </div>
+                <div id="input5" class="input">
+                    <legend for="phone">Phone</legend>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div id="input6" class="input">
+                    <legend for="email">Emails</legend>
+                    <input type="email" id="email" name="email">
+                </div>
+                <!-- Buttons -->
+                <div id="btn" class="btn">
+                    <button type="button" id="btnSave" class="btn">Save Changes</button>
+                    <button type="button" id="btnDelete" class="btn">Delete Student</button>
+                </div>
+            </div>
+        </div>
+        <!-- Script -->
+        <script src="script.js"></script>
+</body>
+</html>

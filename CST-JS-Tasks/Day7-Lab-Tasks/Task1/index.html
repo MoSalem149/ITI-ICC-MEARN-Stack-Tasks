@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Live Docs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My CSS Live Docs</h1>
+    <h3>CSS Snippets</h3>
+    <!-- Code 1 -->
+    <div id="div1">
+        <div class="header">
+            <h5>Center Content (Flex) <span id="clip1" class="span">Copy</span> </h5>
+        </div>
+<pre id="pre1">
+.preview-box {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+</pre>
+    </div>
+    <!-- Code 2 -->
+    <div id="div2">
+        <div class="header">
+            <h5>Button Hover Effect <span id="clip2" class="span">Copy</span></h5>
+        </div>
+<pre id="pre2">
+.preview-box button {
+    background: #0d6efd ;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+.preview-box button : hover {
+    background: #084298;
+}
+</pre>
+    </div>
+    <!-- Code 3 -->
+    <div id="div3">
+        <div class="header">
+            <h5>Card Shadow <span id="clip3" class="span">Copy</span></h5>
+        </div>
+<pre id="pre3">
+.preview-box .card {
+    background: white ;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+</pre>
+    </div>
+    <!-- Paste -->
+    <div id="paste">
+        <h2>Paste Your CSS Here</h2>
+        <textarea name="code" id="codeBox" placeholder="Paste Your CSS Here....."></textarea>
+    </div>
+    <!-- Result -->
+    <div id="result">
+        <h2>Live Result</h2>
+        <div class="preview-box">
+            <div class="card">
+                <p>This is a preview card</p>
+                <button>Hover me</button>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
