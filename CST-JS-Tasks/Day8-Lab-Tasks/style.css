@@ -1,0 +1,152 @@
+/* Rest Page Style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Genral Style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Nav Style */
+.nav {
+    background-color: #0296a5;
+    color: white;
+    padding: 10px 15px;
+    height: 40px;
+}
+
+.nav h1 {
+    float: left;
+    font-size: 26px;
+    line-height: 40px;
+}
+
+.nav h1 .icon {
+    padding-left: 5px;
+    font-size: 25px;
+}
+
+.nav ul {
+    float: right;
+}
+
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Main Style */
+.main {
+    width: 65%;
+    margin: auto;
+}
+
+/* Card Style */
+.card-items {
+    background-color: white;
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 15px;
+    height: 330px;
+    vertical-align: top;
+    margin-right: 27px;
+}
+
+
+.card-items img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.card-items img:hover {
+    opacity: 0.7;
+}
+
+.card-items h4 {
+    margin-bottom: 5px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.card-items p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.card-items .btn {
+    color: white;
+    background-color: #0296a5;
+    border: none;
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Shop Style */
+.shop-content {
+    margin-top: 15px;
+}
+
+.shop-content .search input {
+    width: 97%;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+/* Favorites Style */
+.favorites-items {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.favorites-items p {
+    font-size: 13px;
+}
+
+/* Cart Style */
+.cart-items {
+    text-align: left;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.cart-items p {
+    font-size: 13px;
+    display: inline-block;
+}
+
+.card-items .inc-btn, 
+.card-items .dec-btn {
+    width: 10%;
+}
+
+.card-items .num-item, 
+.card-items .cart-price {
+    display: inline-block;
+}
+
+.cart-items .total {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
