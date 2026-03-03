@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Form API Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Registration Form -->
+    <form action="#" id="regForm" class="regForm">
+      <!-- Title -->
+      <h4>Registration Form</h4>
+
+      <!-- Fields -->
+      <input
+        type="text"
+        name="name"
+        id="userName"
+        placeholder="Username"
+        required
+        minlength="3"
+        maxlength="20"
+      />
+      <input
+        type="email"
+        name="email"
+        id="usrEmail"
+        placeholder="Email"
+        required
+        autocomplete="email"
+      />
+      <input
+        type="password"
+        name="pass"
+        id="userPass"
+        placeholder="Password"
+        required
+        minlength="6"
+      />
+      <input
+        type="number"
+        name="age"
+        id="userAge"
+        placeholder="Age"
+        required
+        minlength="16"
+        max="80"
+      />
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

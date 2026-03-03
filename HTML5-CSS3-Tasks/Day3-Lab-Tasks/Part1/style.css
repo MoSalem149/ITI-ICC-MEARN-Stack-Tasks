@@ -1,0 +1,91 @@
+/* CSS Vars */
+:root {
+  --bg-color: #f4f4f4;
+  --card-bg: #ffffff;
+  --border-color: #ccc;
+  --focus-color: #4caf50;
+  --btn-bg: #001aff;
+  --btn-hover: #0010b8;
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  --border-radius: 10px;
+  --input-radius: 5px;
+  --err-color: red;
+  --pass-color: green;
+}
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: var(--bg-color);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Form */
+.regForm {
+  width: 380px;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 20px 25px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* Header */
+.regForm h4 {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Inputs */
+.regForm input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--input-radius);
+  outline: none;
+}
+
+.regForm input:focus {
+  border-color: var(--focus-color);
+}
+
+/* Red border on invalid touched fields */
+input.touched:invalid {
+  border: 2px solid var(--err-color);
+  outline: none;
+}
+
+/* Green border when valid */
+input.touched:valid {
+  border: 2px solid var(--pass-color);
+  outline: none;
+}
+
+/* Button */
+.regForm button {
+  margin-top: 10px;
+  padding: 8px 0;
+  border: none;
+  border-radius: var(--input-radius);
+  background-color: var(--btn-bg);
+  color: #fff;
+  cursor: pointer;
+}
+
+.regForm button:hover {
+  background-color: var(--btn-hover);
+}

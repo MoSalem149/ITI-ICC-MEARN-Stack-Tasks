@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <h1>ITI Store</h1>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="phones">Phones</button>
+      <button class="filter-btn" data-filter="laptops">Laptops</button>
+      <button class="filter-btn" data-filter="accessories">Accessories</button>
+    </div>
+
+    <!-- Products -->
+    <div class="products">
+      <!-- Phone Cards -->
+      <div class="card" data-category="phones">
+        <img
+          src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80"
+          alt="iPhone Pro"
+        />
+        <div class="card-body">
+          <h3>iPhone Pro</h3>
+          <p class="price">$999</p>
+          <div class="card-data">
+            <div class="rating"><span class="star">★</span> 4.8</div>
+            <div class="likes" data-liked="false">
+              <span>❤️</span>
+              <span class="like-count" data-likes="0">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="phones">
+        <img
+          src="https://images.unsplash.com/photo-1610945264803-c22b62831989?w=400&q=80"
+          alt="Samsung Galaxy"
+        />
+        <div class="card-body">
+          <h3>Samsung Galaxy</h3>
+          <p class="price">$799</p>
+          <div class="card-data">
+            <div class="rating"><span class="star">★</span> 4.6</div>
+            <div class="likes" data-liked="false">
+              <span>❤️</span>
+              <span class="like-count" data-likes="0">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="phones">
+        <img
+          src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&q=80"
+          alt="Google Pixel"
+        />
+        <div class="card-body">
+          <h3>Google Pixel</h3>
+          <p class="price">$699</p>
+          <div class="card-data">
+            <div class="rating"><span class="star">★</span> 4.5</div>
+            <div class="likes" data-liked="false">
+              <span>❤️</span>
+              <span class="like-count" data-likes="0">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop Cards -->
+      <div class="card" data-category="laptops">
+        <img
+          src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&q=80"
+          alt="MacBook Air"
+        />
+        <div class="card-body">
+          <h3>MacBook Air</h3>
+          <p class="price">$1500</p>
+          <div class="card-data">
+            <div class="rating"><span class="star">★</span> 4.9</div>
+            <div class="likes" data-liked="false">
+              <span>❤️</span>
+              <span class="like-count" data-likes="0">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="laptops">
+        <img
+          src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=400&q=80"
+          alt="Dell XPS"
+        />
+        <div class="card-body">
+          <h3>Dell XPS</h3>
+          <p class="price">$1200</p>
+          <div class="card-data">
+            <div class="rating"><span class="star">★</span> 4.7</div>
+            <div class="likes" data-liked="false">
+              <span>❤️</span>
+              <span class="like-count" data-likes="0">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accessory Cards -->
+      <div class="card" data-category="accessories">
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80"
+          alt="Headphones"
+        />
+        <div class="card-body">
+          <h3>Headphones</h3>
+          <p class="price">$199</p>
+          <div class="card-data">
+            <div class="rating"><span class="star">★</span> 4.4</div>
+            <div class="likes" data-liked="false">
+              <span>❤️</span>
+              <span class="like-count" data-likes="0">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="accessories">
+        <img
+          src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&q=80"
+          alt="Smart Watch"
+        />
+        <div class="card-body">
+          <h3>Smart Watch</h3>
+          <p class="price">$299</p>
+          <div class="card-data">
+            <div class="rating"><span class="star">★</span> 4.3</div>
+            <div class="likes" data-liked="false">
+              <span>❤️</span>
+              <span class="like-count" data-likes="0">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

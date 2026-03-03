@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- App Card -->
+    <div class="app">
+      <!-- Header -->
+      <h1>Weather App</h1>
+
+      <!-- Input -->
+      <input id="city" placeholder="Enter city name" maxlength="100" required />
+
+      <!-- Button -->
+      <button>Get Weather</button>
+
+      <!-- Results -->
+      <div id="results">
+        <div class="row">
+          <span class="label">City:</span>
+          <span class="value" id="cityName">-</span>
+        </div>
+        <div class="row">
+          <span class="label">Country:</span>
+          <span class="value" id="country">-</span>
+        </div>
+        <div class="row">
+          <span class="label">Temperature:</span>
+          <span class="value" id="temp">-</span>
+        </div>
+        <div class="row">
+          <span class="label">Wind Speed:</span>
+          <span class="value" id="wind">-</span>
+        </div>
+        <div class="row">
+          <span class="label">Time:</span>
+          <span class="value" id="time">-</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

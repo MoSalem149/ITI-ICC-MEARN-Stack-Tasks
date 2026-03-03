@@ -1,0 +1,149 @@
+/* CSS Vars */
+:root {
+  --bg: #1b2838;
+  --card-bg: #243447;
+  --primary-text: #ffffff;
+  --price-color: #4ecca3;
+  --star-color: #f5a623;
+  --border-color: rgba(255, 255, 255, 0.4);
+  --radius: 14px;
+  --transition: 0.3s ease;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  background: var(--bg);
+  color: var(--primary-text);
+  min-height: 100vh;
+  padding: 40px 24px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+/* Filter Button */
+.filter-btn {
+  padding: 8px 28px;
+  border: 2px solid var(--border-color);
+  background: transparent;
+  color: var(--primary-text);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: #fff;
+}
+
+.filter-btn.active {
+  background: #fff;
+  color: var(--bg);
+  border-color: #fff;
+  font-weight: 700;
+}
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.card.hidden {
+  display: none;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Card Body */
+.card-body {
+  padding: 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Price */
+.price {
+  color: var(--price-color);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* Card Meta */
+.card-data {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+/* Rating */
+.rating .star {
+  color: var(--star-color);
+  margin-right: 3px;
+}
+
+/* Likes */
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.likes:active {
+  transform: scale(1.3);
+}

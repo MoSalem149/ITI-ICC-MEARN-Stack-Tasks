@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gira - Task Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Dialog Modal -->
+    <dialog id="dialog">
+      <form id="form">
+        <h2>&#128101; Set Up Your Team</h2>
+        <p>Enter team member names separated by commas:</p>
+        <input
+          type="text"
+          id="team-input"
+          placeholder="e.g., John, Sarah, Mike, Emma"
+          required
+        />
+        <span id="input-error" class="error-msg"></span>
+        <button type="submit">Create Board</button>
+      </form>
+    </dialog>
+
+    <!-- Header -->
+    <header>
+      <h1>ITI Task Management</h1>
+    </header>
+
+    <!-- Main Board -->
+    <main id="board" class="hidden">
+      <!-- All Cards In One Row -->
+      <div id="cards">
+        <!-- Tasks Board Card -->
+        <article id="task-card">
+          <div class="card-header">
+            <span>&#128203; Tasks Board</span>
+            <span id="task-count" class="badge orange-badge">0</span>
+          </div>
+          <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add a task..." />
+            <button type="submit">Add</button>
+          </form>
+          <span id="task-error" class="error-msg"></span>
+          <div id="task"></div>
+        </article>
+
+        <!-- Member Cards -->
+        <div id="members-container"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
