@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Lab Day1</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Links -->
+    <nav id="nav-links">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#gallery">Gallery</a>
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#complain">Complain</a>
+
+      <!-- Services -->
+      <div id="services-menu">
+        <div id="services-items">
+          <button class="service-item">Item #1</button>
+          <button class="service-item">Item #2</button>
+          <button class="service-item">Item #3</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sections -->
+
+    <!-- About -->
+    <section id="about">
+      <div id="about-box">
+        <h3>Story About snow man</h3>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div id="gallery-container">
+        <!-- Prev Btn -->
+        <button id="prev">
+          <img src="assets/images/left.png" alt="left" />
+        </button>
+        <!-- Imgs -->
+        <img class="gallery-img" src="assets/images/1.jpg" alt="img 1" />
+        <img class="gallery-img" src="assets/images/2.jpg" alt="img 2" />
+        <img class="gallery-img" src="assets/images/3.jpg" alt="img 3" />
+        <img class="gallery-img" src="assets/images/4.jpg" alt="img 4" />
+        <img class="gallery-img" src="assets/images/5.jpg" alt="img 5" />
+        <img class="gallery-img" src="assets/images/6.jpg" alt="img 6" />
+        <img class="gallery-img" src="assets/images/7.jpg" alt="img 7" />
+        <img class="gallery-img" src="assets/images/8.jpg" alt="img 8" />
+        <!-- Next Btn -->
+        <button id="next">
+          <img src="assets/images/right.png" alt="right" />
+        </button>
+      </div>
+    </section>
+
+    <!-- Complain -->
+    <section id="complain">
+      <!-- Form -->
+      <div id="complain-form">
+        <div class="form-box">
+          <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" />
+          </div>
+          <div class="form-row complain-row">
+            <label for="complain-msg">Complain:</label>
+            <textarea
+              id="complain-msg"
+              placeholder="my complain is...."
+            ></textarea>
+          </div>
+          <div class="form-row">
+            <button id="send-btn">send</button>
+          </div>
+        </div>
+      </div>
+      <!-- Preview -->
+      <div id="complain-preview">
+        <p>
+          <strong>Your complain is</strong> <span id="preview-complain"></span>
+        </p>
+        <p><strong>Your name is</strong> <span id="preview-name"></span></p>
+        <p><strong>Your email is</strong> <span id="preview-email"></span></p>
+        <p><strong>Your phone is</strong> <span id="preview-phone"></span></p>
+        <button id="edit-btn">Back to edit</button>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../lib/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

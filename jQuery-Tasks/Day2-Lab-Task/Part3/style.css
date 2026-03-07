@@ -1,0 +1,14 @@
+#rabbit {
+  width: 120px;
+  text-align: center;
+  background: yellow;
+  padding: 6px;
+  cursor: grab;
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+
+#rabbit img {
+  width: 100px;
+}

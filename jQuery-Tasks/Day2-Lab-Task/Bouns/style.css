@@ -1,0 +1,7 @@
+#flower {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  width: 80px;
+  transform-origin: center center;
+}
