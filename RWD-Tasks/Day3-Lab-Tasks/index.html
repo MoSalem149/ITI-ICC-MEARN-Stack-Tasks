@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Template</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="darkBg">
+      <!-- nav -->
+      <nav class="navbar navbar-expand-lg myNav w-75 mx-auto px-4 py-3">
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navLinks"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navLinks">
+          <div
+            class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start w-100 gap-3"
+          >
+            <ul
+              class="navbar-nav d-flex flex-lg-row flex-column gap-lg-5 gap-2 mb-0"
+            >
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#caseStudies" class="nav-link">Case Studies</a>
+              </li>
+              <li class="nav-item">
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a href="#myWork" class="nav-link">Recent Work</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contactMe" class="nav-link">Get In Touch</a>
+              </li>
+            </ul>
+
+            <!-- social icons on the right -->
+            <ul class="navbar-nav d-flex flex-row gap-2 mb-0 ms-lg-auto">
+              <li class="nav-item">
+                <a
+                  href="https://linkedin.com/in/yourprofile"
+                  target="_blank"
+                  class="nav-link socialIcon"
+                >
+                  <img
+                    src="./assets/icons/linkedIn.png"
+                    alt="my linkedin"
+                    width="18"
+                    height="17"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://behance.net/yourprofile"
+                  target="_blank"
+                  class="nav-link socialIcon"
+                >
+                  <img
+                    src="./assets/icons/behance.png"
+                    alt="behance profile"
+                    width="18"
+                    height="17"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://twitter.com/yourhandle"
+                  target="_blank"
+                  class="nav-link socialIcon"
+                >
+                  <img
+                    src="./assets/icons/twitter.png"
+                    alt="twitter"
+                    width="18"
+                    height="17"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero / intro -->
+      <section
+        id="home"
+        class="heroSection d-flex align-items-center w-75 mx-auto"
+      >
+        <div class="heroTxt flex-grow-1">
+          <h1 class="myName">Here Name Your</h1>
+          <p class="shortBio">
+            Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#contactMe" class="hireBtn"
+            >Let's get started <span>›</span></a
+          >
+        </div>
+        <div class="heroPhoto">
+          <!-- profile image -->
+          <img
+            src="./assets/images/profile.png"
+            alt="Here Name Your"
+            class="profilePic"
+          />
+        </div>
+      </section>
+
+      <!-- companies i worked with -->
+      <section class="workedWith w-75 mx-auto">
+        <p class="workedTitle">Worked with</p>
+        <div class="logoRow d-flex gap-3">
+          <div class="logoCard">
+            <img src="./assets/icons/clickup.png" alt="ClickUp" />
+          </div>
+          <div class="logoCard">
+            <img src="./assets/icons/dropbox.png" alt="Dropbox" />
+          </div>
+          <div class="logoCard">
+            <img src="./assets/icons/paychex.png" alt="Paychex" />
+          </div>
+          <div class="logoCard">
+            <img src="./assets/icons/elastic.png" alt="Elastic" />
+          </div>
+          <div class="logoCard">
+            <img src="./assets/icons/stripe.png" alt="Stripe" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================== case studies ===================== -->
+    <section id="caseStudies" class="caseStudies">
+      <div class="w-75 mx-auto">
+        <div class="text-center mb-5">
+          <h2 class="bigTitle">Case Studies</h2>
+          <p class="titleSub">
+            Solving user & business problems since last 15+ years.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <!-- fintech project -->
+        <div class="caseRow d-flex align-items-center gap-5">
+          <div class="caseInfo">
+            <span class="projTag orangeTag">Fintech</span>
+            <h3 class="projTitle">Redesigning PayFlow's onboarding</h3>
+            <p class="projDesc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <a href="#" class="viewBtn orangeBtn"
+              >View case study <span>›</span></a
+            >
+          </div>
+          <div class="caseImg">
+            <img
+              src="./assets/images/case1.png"
+              alt="payflow redesign screens"
+              class="caseThumb"
+            />
+          </div>
+        </div>
+
+        <!-- edtech project -->
+        <div class="caseRow d-flex align-items-center gap-5">
+          <div class="caseImg">
+            <img
+              src="./assets/images/case2.png"
+              alt="learnly dashboard"
+              class="caseThumb"
+            />
+          </div>
+          <div class="caseInfo">
+            <span class="projTag blueTag">EdTech</span>
+            <h3 class="projTitle">Learnly student dashboard</h3>
+            <p class="projDesc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <a href="#" class="viewBtn blueBtn"
+              >View case study <span>›</span></a
+            >
+          </div>
+        </div>
+
+        <!-- pharma project -->
+        <div class="caseRow d-flex align-items-center gap-5">
+          <div class="caseInfo">
+            <span class="projTag tealTag">Pharma</span>
+            <h3 class="projTitle">MedTrack patient portal</h3>
+            <p class="projDesc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <a href="#" class="viewBtn tealBtn"
+              >View case study <span>›</span></a
+            >
+          </div>
+          <div class="caseImg">
+            <img
+              src="./assets/images/case3.png"
+              alt="medtrack portal screens"
+              class="caseThumb"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- testimonials - dark bg -->
+      <div id="testimonials" class="darkBg testimonialsWrap">
+        <div class="w-75 mx-auto">
+          <div class="text-center mb-5">
+            <h2 class="bigTitle" style="color: #fff">Testimonials</h2>
+            <p class="titleSub" style="color: #9c9c9c">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <div class="reviewsGrid">
+            <div class="reviewCard">
+              <img
+                src="./assets/icons/quote-icon.png"
+                alt="quote"
+                class="quoteIcon"
+              />
+              <p class="reviewTxt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="clientInfo">
+                <img
+                  src="./assets/images/client1.png"
+                  alt="Ahmed K."
+                  class="clientPic"
+                />
+                <span class="clientName">Ahmed K.</span>
+              </div>
+            </div>
+
+            <div class="reviewCard">
+              <img
+                src="./assets/icons/quote-icon.png"
+                alt="quote"
+                class="quoteIcon"
+              />
+              <p class="reviewTxt">
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+              <div class="clientInfo">
+                <img
+                  src="./assets/images/client2.png"
+                  alt="Maria T."
+                  class="clientPic"
+                />
+                <span class="clientName">Maria T.</span>
+              </div>
+            </div>
+
+            <div class="reviewCard">
+              <img
+                src="./assets/icons/quote-icon.png"
+                alt="quote"
+                class="quoteIcon"
+              />
+              <p class="reviewTxt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="clientInfo">
+                <img
+                  src="./assets/images/client3.png"
+                  alt="James W."
+                  class="clientPic"
+                />
+                <span class="clientName">James W.</span>
+              </div>
+            </div>
+
+            <div class="reviewCard">
+              <img
+                src="./assets/icons/quote-icon.png"
+                alt="quote"
+                class="quoteIcon"
+              />
+              <p class="reviewTxt">
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.
+              </p>
+              <div class="clientInfo">
+                <img
+                  src="./assets/images/client4.png"
+                  alt="Lena S."
+                  class="clientPic"
+                />
+                <span class="clientName">Lena S.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- recent work -->
+    <section id="myWork" class="recentWork">
+      <div class="w-75 mx-auto">
+        <div class="text-center mb-5">
+          <h2 class="bigTitle">Recent Work</h2>
+          <p class="titleSub">
+            Solving user & business problems since last 15+ years.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <div class="sliderWrapper">
+          <button class="arrowBtn" id="prevBtn" aria-label="Previous">
+            <img src="./assets/icons/arrow-left.png" alt="prev" />
+          </button>
+
+          <div class="sliderOuter">
+            <div class="sliderInner" id="sliderTrack">
+              <div class="workCard">
+                <div class="workImgBox">
+                  <img
+                    src="./assets/images/work1.png"
+                    alt="project 1"
+                    class="workImg"
+                  />
+                </div>
+                <h3 class="workName">PayFlow Redesign</h3>
+                <p class="workDesc">
+                  Labore et dolore magna aliqua. sed do eiusmod tempor
+                  incididunt ut labore et dolore magna.
+                </p>
+                <a href="#" class="moreBtn">Know more <span>›</span></a>
+              </div>
+
+              <div class="workCard">
+                <div class="workImgBox">
+                  <img
+                    src="./assets/images/work2.png"
+                    alt="project 2"
+                    class="workImg"
+                  />
+                </div>
+                <h3 class="workName">Learnly Dashboard</h3>
+                <p class="workDesc">
+                  Rempor incididunt ut labore et dolore magna aliqua. sed do
+                  eiusmod tempor incididunt u
+                </p>
+                <a href="#" class="moreBtn">Know more <span>›</span></a>
+              </div>
+
+              <div class="workCard">
+                <div class="workImgBox">
+                  <img
+                    src="./assets/images/work3.png"
+                    alt="project 3"
+                    class="workImg"
+                  />
+                </div>
+                <h3 class="workName">MedTrack Portal</h3>
+                <p class="workDesc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt.
+                </p>
+                <a href="#" class="moreBtn">Know more <span>›</span></a>
+              </div>
+
+              <div class="workCard">
+                <div class="workImgBox">
+                  <img
+                    src="./assets/images/work4.png"
+                    alt="project 4"
+                    class="workImg"
+                  />
+                </div>
+                <h3 class="workName">Stripe Checkout UI</h3>
+                <p class="workDesc">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna.
+                </p>
+                <a href="#" class="moreBtn">Know more <span>›</span></a>
+              </div>
+            </div>
+          </div>
+
+          <button class="arrowBtn" id="nextBtn" aria-label="Next">
+            <img src="./assets/icons/arrow-right.png" alt="next" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section id="contactMe" class="darkBg contactSection">
+      <div class="contactBox mx-auto text-center">
+        <h2 class="bigTitle" style="color: #fff">Get In Touch</h2>
+        <p class="titleSub mb-4" style="color: #9c9c9c">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <!-- simple contact form, no backend yet -->
+        <form class="myForm" novalidate>
+          <div class="inputGroup">
+            <label for="myEmail" class="inputLabel">Email</label>
+            <input
+              type="email"
+              id="myEmail"
+              name="email"
+              class="myInput"
+              placeholder="Please enter your email"
+              required
+            />
+          </div>
+
+          <div class="inputGroup">
+            <label for="myPhone" class="inputLabel">Mobile</label>
+            <input
+              type="tel"
+              id="myPhone"
+              name="phone"
+              class="myInput"
+              placeholder="Enter mobile"
+            />
+          </div>
+
+          <div class="inputGroup">
+            <label for="myMsg" class="inputLabel">Message</label>
+            <textarea
+              id="myMsg"
+              name="message"
+              class="myInput myTextarea"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submitBtn">Submit <span>›</span></button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="siteFooter">
+      <p>Made with ❤️</p>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

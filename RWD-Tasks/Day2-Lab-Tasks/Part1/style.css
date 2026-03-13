@@ -1,0 +1,103 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* wrapper */
+.wrapper {
+  display: grid;
+  grid-template-areas: "sidebar main";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar .logo span {
+  color: #e8a000;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.sidebar .title {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+.sidebar .text {
+  font-size: 0.78rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Main */
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "navbar"
+    "grid";
+  grid-template-rows: 60px 1fr;
+}
+
+/* ── Navbar */
+.navbar {
+  grid-area: navbar;
+  background: #c8a96e;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+
+.navbar button.active {
+  background: #a07840;
+}
+
+/* Grid */
+.grid {
+  grid-area: grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas:
+    "img1  img2  img3  img4"
+    "img5  img6  img7  img8"
+    "img9  img10 img11 img12";
+}
