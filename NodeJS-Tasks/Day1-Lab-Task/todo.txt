@@ -1,0 +1,125 @@
+Curator — Express Collections Exercise
+=======================================
+
+You have a working bookmark manager app called Curator.
+The frontend (public/) and the bookmark API are already built.
+Your job: implement the COLLECTION endpoints so users can
+organize bookmarks into collections.
+
+When you're done, the sidebar in the UI will let you create
+collections, assign bookmarks to them, and filter by collection.
+
+
+Setup
+-----
+  npm install
+  node server.js          → http://localhost:3000
+  Open public/index.html in your browser (serve with any static
+  server, or use the playground at public/playground.html to test
+  your API directly).
+
+
+What's already done
+-------------------
+  ✔ Frontend UI             → public/  (don't modify)
+  ✔ Bookmark store          → bookmarkStore.js (CRUD for bookmarks)
+  ✔ Bookmark routes         → server.js (GET/POST/PUT/DELETE /api/bookmarks)
+  ✔ Data file               → bookmarks.json
+
+
+Your tasks
+----------
+
+STEP 1 — Collection store functions (bookmarkStore.js)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Open bookmarkStore.js and scroll to the "Collection CRUD" section.
+Implement and export these five functions:
+
+  1. getCollections()
+     Return the collections array from the data file.
+
+  2. getCollectionById(id)
+     Find the collection with the matching id.
+     Also include a "bookmarks" property containing all bookmarks
+     whose collectionId matches this collection's id.
+     Return null if the collection doesn't exist.
+
+  3. createCollection({ name })
+     Create a new object with a random id (use crypto.randomUUID())
+     and the given name. Push it into the collections array, save,
+     and return the new collection.
+
+  4. updateCollection(id, fields)
+     Find the collection by id, merge the given fields into it,
+     save, and return the updated collection.
+     Return null if not found.
+
+  5. deleteCollection(id)
+     Remove the collection from the array.
+     IMPORTANT: also set collectionId to null on every bookmark
+     that belonged to this collection (orphan them, don't delete).
+     Return false if not found, true if deleted.
+
+Tip: study the bookmark functions right above — yours will follow
+the same read → modify → write → return pattern.
+
+
+STEP 2 — Collection routes (server.js)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Open server.js and find the "Collection routes" section.
+
+  1. Import your new store functions at the top of the file.
+
+  2. Create a router:
+       const collectionRouter = express.Router();
+
+  3. Add five route handlers:
+
+     GET    /           → respond with all collections
+     GET    /:id        → respond with one collection (include its
+                          bookmarks). Return 404 if not found.
+     POST   /           → read "name" from req.body. If missing,
+                          return 400. Otherwise create and respond 201.
+     PUT    /:id        → update the collection. Return 404 if
+                          not found.
+     DELETE /:id        → delete the collection. Return 404 if
+                          not found.
+
+  4. Mount the router:
+       app.use("/api/collections", collectionRouter);
+
+Tip: the bookmarkRouter right above is your template. The
+collection routes follow the exact same structure.
+
+
+STEP 3 — Test it
+~~~~~~~~~~~~~~~~~
+  1. Restart the server (Ctrl+C, then node server.js).
+  2. Open public/playground.html and try:
+       POST /api/collections  with body  {"name": "Favorites"}
+       GET  /api/collections
+  3. Open the main UI (public/index.html). You should be able to:
+       - See your new collection in the sidebar
+       - Create more collections
+       - Move bookmarks into collections
+       - Filter bookmarks by clicking a collection
+       - Delete collections
+
+
+Hints
+-----
+  • Each collection object looks like: { id: "uuid", name: "..." }
+  • Use crypto.randomUUID() for ids (already imported in the store)
+  • readData() and writeData(data) are your friends
+  • Return proper HTTP status codes: 200, 201, 400, 404
+  • The frontend expects these exact endpoints — don't change paths
+
+
+Stretch goals (optional)
+------------------------
+  □ Add validation: prevent duplicate collection names
+  □ When deleting a collection, add a ?deleteBookmarks=true query
+    param option that also removes the bookmarks instead of
+    orphaning them
+  □ Add a GET /api/collections/:id/bookmarks endpoint that returns
+    just the bookmarks for a collection

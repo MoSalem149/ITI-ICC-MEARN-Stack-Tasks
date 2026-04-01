@@ -1,0 +1,34 @@
+{
+  "bookmarks": [
+    {
+      "id": "b1a2b3c4-0001-4000-a000-000000000001",
+      "url": "https://expressjs.com",
+      "title": "Express - Node.js framework",
+      "tags": [
+        "node",
+        "backend"
+      ],
+      "collectionId": null
+    },
+    {
+      "id": "b1a2b3c4-0001-4000-a000-000000000002",
+      "url": "https://developer.mozilla.org",
+      "title": "MDN Web Docs",
+      "tags": [
+        "docs",
+        "reference"
+      ],
+      "collectionId": null
+    },
+    {
+      "id": "87ff1ee0-22c2-4478-86c7-4fea2ef84dc9",
+      "url": "http://localhost:5500",
+      "title": "React",
+      "tags": [
+        "React"
+      ],
+      "collectionId": null
+    }
+  ],
+  "collections": []
+}

@@ -1,0 +1,111 @@
+{
+  "users": [
+    {
+      "id": "5efbefde-96cd-4b31-80ce-b2d3caa88fa8",
+      "username": "testuser",
+      "email": "user1@test.com",
+      "password": "$2b$10$yklASilsAmvFWnNKTmchieZjgo4dX87XRfc.jJqwt0WN11N9jId4W"
+    },
+    {
+      "id": "2621ef71-94fb-430d-ace5-4c01d4da563a",
+      "username": "testuser",
+      "email": "user1@tet.com",
+      "password": "$2b$10$WKKoAFXkdfFFJW2NlKkeWeR.avbsOCnA8365FYzakLw6M16rHFjCy"
+    },
+    {
+      "id": "100a2a03-07de-488f-a132-ebd3a39d6a97",
+      "username": "testuser",
+      "email": "test@example.com",
+      "password": "$2b$10$iPuX8lLMhuC/BQ36UeDum.ytH.L124tfwFv/fBxnmJvzv3FkdQG8q"
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": "0b10ebfe-7340-4b1d-86e2-e47a210cb85c",
+      "url": "https://wowo.com",
+      "title": "tt",
+      "tags": [
+        "t",
+        "t",
+        "wo"
+      ],
+      "collectionId": null
+    },
+    {
+      "id": "1a6c2caa-cd1b-4240-9aac-7341d897a93f",
+      "url": "http://wowo.com",
+      "title": "Updated Bookmark Title",
+      "tags": [
+        "updated",
+        "demo"
+      ],
+      "collectionId": null
+    },
+    {
+      "id": "36e185ab-9ca6-4495-831d-4f78a6d8af7f",
+      "url": "http://wowo.com",
+      "title": "wow",
+      "tags": [
+        "w"
+      ],
+      "collectionId": null
+    },
+    {
+      "id": "ab7db86e-337b-4143-bb59-59d24c1154a6",
+      "url": "https://wowoie.com",
+      "title": "teie",
+      "tags": [
+        "t1",
+        "wow"
+      ],
+      "collectionId": "285d7063-84a1-436e-b5c6-dc5516a702ed"
+    },
+    {
+      "id": "e7412374-5ab3-41c5-806a-84d0dd9ea75d",
+      "url": "http://wowei.com",
+      "title": "w",
+      "tags": [
+        "wo"
+      ],
+      "collectionId": "285d7063-84a1-436e-b5c6-dc5516a702ed"
+    },
+    {
+      "id": "0a5b6187-d3b1-470e-8857-f70bda48e529",
+      "url": "https://wowo.com",
+      "title": "t",
+      "tags": [
+        "t",
+        "w"
+      ],
+      "collectionId": "3e7604d5-c7de-4a46-9fec-0c2b3e5d86c8"
+    },
+    {
+      "id": "88cd7960-a59f-4988-8b1c-7d7a65a9cd3c",
+      "url": "https://expressjs.comtttttt1447",
+      "title": "Express.js",
+      "tags": [
+        "a",
+        "b"
+      ],
+      "collectionId": "3e7604d5-c7de-4a46-9fec-0c2b3e5d86c8"
+    }
+  ],
+  "collections": [
+    {
+      "id": "3e7604d5-c7de-4a46-9fec-0c2b3e5d86c8",
+      "name": "hey"
+    },
+    {
+      "id": "d5a2132e-a376-4f5c-be9e-5d67dadd42c3",
+      "name": "ahmed"
+    },
+    {
+      "id": "285d7063-84a1-436e-b5c6-dc5516a702ed",
+      "name": "collection2"
+    },
+    {
+      "id": "5d66a103-8fea-4682-91a4-5978b5f050b6",
+      "name": "new  collection"
+    }
+  ]
+}
