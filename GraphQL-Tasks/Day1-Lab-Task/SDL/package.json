@@ -1,0 +1,17 @@
+{
+    "name": "sdl",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "test": "test"
+    },
+    "author": "Salem",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "express": "^5.1.0",
+        "express-graphql": "^0.12.0",
+        "graphql": "^16.11.0",
+        "joi": "^17.13.3"
+    }
+}
