@@ -1,0 +1,287 @@
+/* Colors */
+:root {
+  --purple: #6c63ff;
+  --orange: #f0a500;
+  --green: #27ae60;
+  --gray: #b0b0b0;
+  --red: #e74c3c;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4a6fa5, #7c5cbf);
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 28px 32px 16px;
+}
+
+header h1 {
+  font-size: 30px;
+  color: white;
+}
+
+/* Dialog Box */
+dialog {
+  border: none;
+  border-radius: 16px;
+  padding: 32px 28px;
+  width: 460px;
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+dialog h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+dialog p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Text inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  display: block;
+}
+
+input[type="text"]:focus {
+  outline: 2px solid var(--purple);
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+dialog button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 12px;
+  background: linear-gradient(135deg, #6c63ff, #a78bfa);
+}
+
+dialog button[type="submit"]:hover {
+  background: linear-gradient(135deg, #574fd6, #9061f9);
+}
+
+/* Error text */
+.error-msg {
+  color: var(--red);
+  font-size: 12px;
+  display: block;
+  min-height: 16px;
+  margin-top: 4px;
+}
+
+/* Hide element */
+.hidden {
+  display: none;
+}
+
+/* Board */
+#cards {
+  padding: 16px 24px;
+}
+
+/* Task card and member card */
+#task-card,
+.member-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  width: 240px;
+  min-height: 320px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.card-header span:first-child {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Count badges */
+.badge {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  float: right;
+}
+
+.orange-badge {
+  background: var(--orange);
+}
+.blue-badge {
+  background: var(--purple);
+}
+
+/* Task input */
+#task-form {
+  margin-bottom: 8px;
+}
+
+#task-form input {
+  width: 68%;
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+#task-form button {
+  width: 28%;
+  display: inline-block;
+  padding: 8px 6px;
+  background: var(--orange);
+  font-size: 13px;
+  vertical-align: top;
+  margin-left: 2px;
+}
+
+#task-form button:hover {
+  background: #d4920a;
+}
+
+/* Draggable*/
+.task-card {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  color: #333;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+  cursor: grab;
+  font-size: 13px;
+  position: relative;
+}
+
+.task-card:active {
+  cursor: grabbing;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--red);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+#members-container {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+/* Highlight on drag hover */
+.member-card.drag-over {
+  border: 2px dashed var(--purple);
+  background: #f0eeff;
+}
+
+.member-card h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Shown when member has no tasks */
+.no-tasks-msg {
+  color: #bbb;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 24px;
+  display: block;
+}
+
+/* Task inside a member card */
+.member-task {
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-size: 13px;
+  background: var(--gray);
+}
+
+.member-task p {
+  margin-bottom: 6px;
+}
+
+/* Status buttons */
+.status-btn {
+  font-size: 10px;
+  padding: 3px 7px;
+  margin-right: 3px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.status-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Task background by status */
+.status-todo {
+  background: var(--gray);
+}
+
+.status-ongoing {
+  background: var(--orange);
+}
+
+.status-finished {
+  background: var(--green);
+}
